@@ -36,8 +36,6 @@ services:
       context: .
       dockerfile: Dockerfile.client
     container_name: job-import-client
-    env_file:
-      - client/.env
     ports:
       - "3000:3000"
     depends_on:
