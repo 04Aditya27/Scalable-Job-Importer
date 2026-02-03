@@ -81,7 +81,7 @@ All services are managed using **Docker Compose** for easy local setup.
 
 ### Backend
 
-Create a `.env` file in the `server/` directory using the .env.example file present in server/:
+Create a `.env` file in the `server/` directory using the .env.example file present in `server`/:
 
 ```bash
 cp server/.env.example server/.env
