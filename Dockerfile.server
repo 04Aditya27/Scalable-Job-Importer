@@ -1,0 +1,14 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install dependencies
+COPY server/package*.json ./
+RUN npm install --only=production
+
+# Copy server code
+COPY server ./
+
+EXPOSE 4000
+
+CMD ["npm", "run", "start"]
